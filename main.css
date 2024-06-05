@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    font-size:16px;
+}
+body{
+    font-family:"Roboto", sans-serif;
+    background-color:rgb(255, 255, 255);
+    display: block;
+}
+p {
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.container{
+    margin:1rem auto;
+    width:80%;
+}
+:root{
+    --black: rgba(27, 27, 27, 0.9);
+    --white: rgb(219, 219, 219);
+    --primary-color:rgba(32, 32, 77, 0.9);
+    --secondary-color:rgb(117, 117, 117);
+}
+/*index.php*/
+body{
+    width: 100%;
+    height: 100dvh;
+    background-color: rgb(230, 230, 230);
+}
+nav{
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: saturate(180%),blur(20px);
+    padding: .4rem;
+}
+nav .container{
+    display: flex;
+    justify-content: right;
+}
+.profile{
+    width: 20%;
+    justify-content: center;
+}
+.profile a{
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.5rem;
+    transition: .4s all;
+}
+.profile a:hover{
+    color: black;
+}
+main{
+    margin: 0 auto;
+    width: 100%;
+    height:80dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content {
+    margin: 0 auto;
+    width: 20%;
+    height: auto;
+    background-color:rgba(38, 38, 40, 0.7);
+    backdrop-filter: blur(20px), saturate(180%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 3rem 1rem 2rem 1rem;
+    border-radius: 5px;
+}
+.container {
+    width: 70%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+}
+.card-content{
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: row;  
+    gap: 1rem;  
+    justify-content: center; 
+    align-items: center;
+}
+.card-content .surname{
+    text-transform: uppercase;
+}
+.like-dislike{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.like,.dislike{
+    font-size: 1.2rem;
+    color: rgb(0, 31, 188);
+    opacity: .85;
+    transition:.1s all;
+}
+.like:hover,.dislike:hover{
+    scale: 1.03;
+    color: blue;
+    opacity: 1;
+}
+/*table.php*/
+.indexphp{
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+.table{
+    margin: 0 auto;
+    width: 70% !important;
+}
+.liked i,.disliked i{
+    font-size: 1.2rem;
+    color: rgb(0, 31, 188);
+    opacity: .85;
+    transition:.5s all;
+}
+.liked i:hover,.disliked i:hover{
+    opacity: 1;
+}
+/*pop-up*/
+#pop-up{
+    display: inline;
+    position: absolute;
+    top: 5dvh;
+    right: 0;
+}
